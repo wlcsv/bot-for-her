@@ -2,8 +2,8 @@ var fs = require('fs');
 var request = require('request');
 var readlineSync = require('readline-sync');
 
-var url = 'aaaaa'
-var filename = 'aaaaaaaa'
+var url = readlineSync.question('Qual a URL meu parceiro? ');
+var filename = readlineSync.question('Passa o nome do arquivo aí fazendo favor '); 
 
 var download = function(url, filename, callback) {
     request.head(url, function(err, res, body) {
@@ -12,5 +12,5 @@ var download = function(url, filename, callback) {
 };
 
 download(url, filename, function() {
-    console.log("done!");
+    console.log("pronto!");
 })
