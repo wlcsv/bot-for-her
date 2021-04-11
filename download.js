@@ -1,6 +1,6 @@
 var fs = require('fs');
-var request = require('request');
-var readlineSync = require('readline-sync');
+var request = require('request'); // npm install request
+var readlineSync = require('readline-sync'); // npm install readline-sync
 
 var url = readlineSync.question('Qual a URL meu parceiro? ');
 var filename = readlineSync.question('Passa o nome do arquivo aí fazendo favor '); 
